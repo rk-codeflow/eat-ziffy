@@ -1,0 +1,252 @@
+:root {
+  --yellow: #f49c4c;
+  --green: #40d962;
+  --cream: #ccd8a1;
+  --smoke: #dcf1d2;
+  --white: #fff;
+}
+
+/***************
+    BASE CSS
+***************/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Saira', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/***************
+    CLASSES
+    TO USE
+***************/
+.primary-title {
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.sec-title {
+  text-transform: uppercase;
+}
+
+.sec-title::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  height: 3px;
+  width: 20px;
+  background: var(--green);
+}
+
+.tert-title {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.para {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.ptb {
+  padding: 3rem 0;
+
+}
+
+/***************
+    NAV  CSS
+***************/
+nav {
+  /* background-color: var(--white) !important; */
+  box-shadow: 0 5px 5px 0 rgb(0 0 0 / 10%);
+}
+nav a.logo img {
+  height: 65px;
+}
+
+nav ul.navbar-nav li.nav-item {
+  /* padding: 0 3rem; */
+  font-size: clamp(1rem, 4vw, 1.5rem);
+}
+
+/***************
+    BANNER  CSS
+***************/
+.banner {
+  background-color:var(--smoke);
+}
+
+.banner .banner-content h2.primary-title {
+    line-height: 1.3;
+}
+
+.banner .banner-content p.sub-title {
+    line-height: 1.7;
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.banner .banner-content h2 span.motto {
+  text-transform: uppercase;
+  color: var(--green);
+}
+
+/* .banner-img {
+  background: url(/img/blob.svg) no-repeat center center / cover;
+} */
+
+/***************
+  ABOUT  CSS
+***************/
+.about .about-detail {
+  margin: 3rem 0;
+}
+
+.about .about-detail .detail-img {
+  min-height: 200px;
+  margin-bottom: 1rem;
+  background-color: var(--green);
+}
+
+.about .about-detail .detail-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+
+.about .about-detail .details {
+    padding: 3rem 3rem;
+    background: var(--white);
+    box-shadow: 0 6px 120px rgb(0 0 0 / 10%);
+}
+
+.about .about-detail .details .icon {
+  margin-bottom: 1rem;
+}
+
+.about .about-detail .details .icon i {
+    color: var(--green);
+}
+
+.about .about-detail .details a.more-btn {
+    color: var(--white);
+    font-size: 1rem;
+    background-color: var(--green);
+    text-decoration: none;
+    padding: .5rem 1rem;
+    display: block;
+    max-width: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/***************
+    SERVICES
+***************/
+.services {
+    background: url(/img/food-bg.jpg) no-repeat center center / cover;
+    background-color: var(--yellow);
+    background-blend-mode: multiply;
+}
+
+.services .services-detail {
+    margin: 3rem 0;
+}
+
+.services .services-detail .service {
+    margin-bottom: 1rem;
+    padding: 2rem 1rem;
+    box-shadow: 0 6px 120px rgb(0 0 0 / 20%);
+    background: var(--white);
+    text-align: center;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transition: transform 500ms ease-in;
+    -webkit-transition: transform 500ms ease-in;
+    -moz-transition: transform 500ms ease-in;
+    -ms-transition: transform 500ms ease-in;
+    -o-transition: transform 500ms ease-in;
+}
+
+.services .services-detail .service:hover {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    
+}
+
+.services .services-detail .service .s-icon {
+    margin-bottom: 1.5rem;
+}
+
+ 
+.services .services-detail .service .services-desp h3 {
+    margin-bottom: 1rem;
+}
+
+/***************
+  RESTAURANTS
+***************/
+.restaurants {
+  background-color: var(--smoke);
+}
+
+.restaurants .top-restaurants {
+    margin: 3rem 0;
+}
+
+.restaurants .top-restaurants .res-img {
+    height: 15rem;
+}
+
+.restaurants .top-restaurants .res-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.restaurants .top-restaurants .owl-carousel .owl-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+
+.restaurants .top-restaurants .owl-carousel .owl-nav button.owl-prev, 
+.restaurants .top-restaurants .owl-carousel .owl-nav button.owl-next {
+  font-size: 50px;
+}
