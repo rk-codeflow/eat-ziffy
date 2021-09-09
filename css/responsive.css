@@ -1,33 +1,51 @@
-
 @media (min-width: 600px) {
-    .banner-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-    }
+  /* .banner-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+  } */
 
-    .services .services-detail {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 1rem;
-    }
+  .services .services-detail {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+
+  .banner .banner-content br {
+    display: block;
+  }
 }
 
 @media (min-width: 900px) {
-.about .about-detail  {
+  .about .about-detail {
     display: flex;
     align-items: center;
-}
+  }
 
-.about .about-detail .detail-img {
+  .about .about-detail .detail-img {
     width: 55%;
     height: 40rem;
-}
+  }
 
-.about .about-detail .details {
+  .about .about-detail .details {
     width: 50%;
     position: absolute;
     right: 4%;
+  }
+
+  .banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+      url(/img/bn-bg1.jpg);
+    background-position: right 0px bottom 45%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+  }
 }
 
+@media (min-width: 992px) {
+  nav ul.navbar-nav li.nav-item {
+    padding: 0 3rem;
+  }
 }

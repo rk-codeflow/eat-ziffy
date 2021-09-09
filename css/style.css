@@ -46,7 +46,8 @@ html {
 ***************/
 .primary-title {
   font-weight: 800;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  font-size: clamp(1.5rem, 5vw, 1.85rem);
 }
 
 .sec-title {
@@ -66,6 +67,7 @@ html {
 .tert-title {
   font-weight: 500;
   letter-spacing: 1px;
+  font-size: clamp(1rem, 5vw, 1.35rem);
 }
 
 .para {
@@ -77,11 +79,25 @@ html {
   padding: 3rem 0;
 }
 
+.more-btn {
+  color: var(--white);
+  font-size: 1rem;
+  background-color: var(--green);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+  max-width: 120px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 /***************
     NAV  CSS
 ***************/
 nav {
-  /* background-color: var(--white) !important; */
   box-shadow: 0 5px 5px 0 rgb(0 0 0 / 10%);
 }
 nav a.logo img {
@@ -89,8 +105,11 @@ nav a.logo img {
 }
 
 nav ul.navbar-nav li.nav-item {
-  /* padding: 0 3rem; */
-  font-size: clamp(1rem, 4vw, 1.5rem);
+  font-size: clamp(1.1rem, 4vw, 1.35rem);
+}
+
+nav ul.navbar-nav li.nav-item a.nav-link:hover {
+  color: var(--green) !important;
 }
 
 .navbar-light .navbar-toggler {
@@ -101,22 +120,45 @@ nav ul.navbar-nav li.nav-item {
   height: 35px;
 }
 
+.fixed-top {
+  background: var(--white);
+}
+
 /***************
     BANNER  CSS
 ***************/
 .banner {
-  background-color: var(--smoke);
-  padding-top: 3rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url(/img/bn-bg1.jpg);
+  background-position: right 0px bottom 45%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  color: var(--white);
+  margin-top: 92px;
+}
+
+.banner .banner-content .title {
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner .banner-content br {
+  display: none;
 }
 
 .banner .banner-content h2.primary-title {
   line-height: 1.3;
+  margin-bottom: 10px;
 }
 
 .banner .banner-content p.sub-title {
   line-height: 1.7;
-  margin: 10px 0;
-  font-size: 1.2rem;
+  /* margin: 10px 0; */
+  font-size: clamp(1rem, 4vw, 1.2rem);
+  text-align: justify;
 }
 
 .banner .banner-content h2 span.motto {
@@ -124,9 +166,9 @@ nav ul.navbar-nav li.nav-item {
   color: var(--green);
 }
 
-/* .banner-img {
-  background: url(/img/blob.svg) no-repeat center center / cover;
-} */
+.banner .banner-content .banner-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
 
 /***************
   ABOUT  CSS
@@ -161,20 +203,9 @@ nav ul.navbar-nav li.nav-item {
 .about .about-detail .details .icon i {
   color: var(--green);
 }
-
-.about .about-detail .details a.more-btn {
-  color: var(--white);
-  font-size: 1rem;
-  background-color: var(--green);
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  display: block;
-  max-width: 120px;
-  text-align: center;
-  text-transform: uppercase;
-  margin-top: 1rem;
-  font-size: 1rem;
-  font-weight: 400;
+.about .about-detail .details h4 {
+  font-size: clamp(1.25rem, 5vw, 1.75rem);
+  text-align: justify;
 }
 
 /***************
@@ -254,7 +285,7 @@ nav ul.navbar-nav li.nav-item {
 
 .restaurants .top-restaurants .owl-carousel .owl-nav button.owl-prev,
 .restaurants .top-restaurants .owl-carousel .owl-nav button.owl-next {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .restaurants .top-restaurants .res-details {
@@ -265,4 +296,21 @@ nav ul.navbar-nav li.nav-item {
 
 .restaurants .top-restaurants .res-details p.location {
   margin-top: 1rem;
+  font-size: clamp(1rem, 5vw, 1.15rem);
+}
+
+/***************
+  RESTAURANTS
+***************/
+footer .footer {
+  padding: 2rem 0;
+}
+
+footer .footer a.company {
+  color: var(--green);
+  text-decoration: none;
+}
+
+footer .footer h6 {
+  font-size: clamp(1rem, 5vw, 1.25rem);
 }

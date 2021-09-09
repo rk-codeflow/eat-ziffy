@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.css" />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- style css -->
     <link rel="stylesheet" href="css/style.css" />
 
@@ -35,7 +38,7 @@
   </head>
   <body>
     <!-- navbar starts -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <a class="navbar-brand logo" href="#"
         ><img src="img/logo.png" alt="logo"
       /></a>
@@ -53,13 +56,17 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="#about-us"
               >About Us <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#services">Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#restaurant" class="nav-link">Top Restaurants</a>
           </li>
         </ul>
       </div>
@@ -73,11 +80,11 @@
           <div class="col-lg-12">
             <div class="banner-content">
               <div class="title">
-                <h2 class="primary-title">
-                  Get your food <span class="motto">delivered</span> at your
-                  doorstep.
+                <h2 class="primary-title banner-title">
+                  Get your food <span class="motto">delivered</span> <br />at
+                  your doorstep.
                 </h2>
-                <p class="para sub-title">
+                <p class="para sub-title my-3">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Saepe, eos?
                 </p>
@@ -85,12 +92,13 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Beatae, quibusdam.
                 </p>
+                <a href="#" class="more-btn mt-4">more</a>
               </div>
-              <div class="image">
+              <!-- <div class="image">
                 <div class="banner-img">
-                  <img src="img/delivery.png" alt="" />
+                  <img src="img/d.jpg" alt="" />
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -104,20 +112,20 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="about-content">
-              <div class="title">
+              <div class="title" data-aos="fade-up">
                 <h2 class="sec-title"><small>more</small></h2>
                 <h2 class="primary-title">About Us</h2>
               </div>
 
               <div class="about-detail">
-                <div class="detail-img">
+                <div class="detail-img" data-aos="fade-up">
                   <img src="img/team.jpg" alt="about us" />
                 </div>
-                <div class="details">
+                <div class="details" data-aos="fade-up">
                   <div class="icon">
                     <i class="icofont-quote-left icofont-3x"></i>
                   </div>
-                  <h4 class="">
+                  <h4>
                     <small
                       >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Placeat nam quis temporibus vel ipsa cum optio harum, qui
@@ -125,7 +133,7 @@
                     >
                   </h4>
                   <br />
-                  <h4 class="">
+                  <h4>
                     <small
                       >Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Iure fuga deleniti, iste odit omnis assumenda, saepe
@@ -149,12 +157,12 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="services-content">
-              <div class="title text-white">
+              <div class="title text-white" data-aos="fade-up">
                 <h2 class="sec-title"><small>our</small></h2>
                 <h2 class="primary-title">Services</h2>
               </div>
 
-              <div class="services-detail">
+              <div class="services-detail" data-aos="fade-up">
                 <!-- one -->
                 <div class="service">
                   <div class="s-icon">
@@ -205,11 +213,11 @@
     <!-- services ends  -->
 
     <!-- popular restaurants -->
-    <section class="restaurants ptb">
+    <section class="restaurants ptb" id="restaurant">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12">
-            <div class="restaurant-content">
+            <div class="restaurant-content" data-aos="fade-up">
               <div class="title">
                 <h2 class="sec-title"><small>top</small></h2>
                 <h2 class="primary-title">Restaurants</h2>
@@ -290,6 +298,14 @@
       </div>
     </section>
     <!-- popular restaurants ends -->
+
+    <!-- footer starts -->
+    <footer>
+      <div class="footer text-center">
+        <h6>&copy; Copyright 2021 <a href="#" class="company">Eat Ziffy</a></h6>
+      </div>
+    </footer>
+    <!-- footer ends -->
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -297,6 +313,9 @@
 
     <!-- owl js -->
     <script src="js/owl.carousel.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <!-- custom js -->
     <script src="js/script.js"></script>
