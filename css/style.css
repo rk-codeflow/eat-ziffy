@@ -27,7 +27,7 @@ h6,
 p {
   margin: 0;
   padding: 0;
-  font-family: 'Saira', sans-serif;
+  font-family: "Saira", sans-serif;
 }
 
 img {
@@ -54,7 +54,7 @@ html {
 }
 
 .sec-title::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 20px;
   left: 100px;
@@ -64,7 +64,7 @@ html {
 }
 
 .tert-title {
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 1px;
 }
 
@@ -75,7 +75,6 @@ html {
 
 .ptb {
   padding: 3rem 0;
-
 }
 
 /***************
@@ -94,21 +93,30 @@ nav ul.navbar-nav li.nav-item {
   font-size: clamp(1rem, 4vw, 1.5rem);
 }
 
+.navbar-light .navbar-toggler {
+  border: 0 !important;
+}
+
+.navbar-light .navbar-toggler img {
+  height: 35px;
+}
+
 /***************
     BANNER  CSS
 ***************/
 .banner {
-  background-color:var(--smoke);
+  background-color: var(--smoke);
+  padding-top: 3rem;
 }
 
 .banner .banner-content h2.primary-title {
-    line-height: 1.3;
+  line-height: 1.3;
 }
 
 .banner .banner-content p.sub-title {
-    line-height: 1.7;
-    margin: 10px 0;
-    font-size: 1.2rem;
+  line-height: 1.7;
+  margin: 10px 0;
+  font-size: 1.2rem;
 }
 
 .banner .banner-content h2 span.motto {
@@ -141,9 +149,9 @@ nav ul.navbar-nav li.nav-item {
 }
 
 .about .about-detail .details {
-    padding: 3rem 3rem;
-    background: var(--white);
-    box-shadow: 0 6px 120px rgb(0 0 0 / 10%);
+  padding: 3rem 3rem;
+  background: var(--white);
+  box-shadow: 0 6px 120px rgb(0 0 0 / 10%);
 }
 
 .about .about-detail .details .icon {
@@ -151,71 +159,70 @@ nav ul.navbar-nav li.nav-item {
 }
 
 .about .about-detail .details .icon i {
-    color: var(--green);
+  color: var(--green);
 }
 
 .about .about-detail .details a.more-btn {
-    color: var(--white);
-    font-size: 1rem;
-    background-color: var(--green);
-    text-decoration: none;
-    padding: .5rem 1rem;
-    display: block;
-    max-width: 120px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 1rem;
-    font-size: 1rem;
-    font-weight: 400;
+  color: var(--white);
+  font-size: 1rem;
+  background-color: var(--green);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+  max-width: 120px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 /***************
     SERVICES
 ***************/
 .services {
-    background: url(/img/food-bg.jpg) no-repeat center center / cover;
-    background-color: var(--yellow);
-    background-blend-mode: multiply;
+  background: url(/img/food-bg.jpg) no-repeat center center / cover;
+  background-color: var(--yellow);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
 }
 
 .services .services-detail {
-    margin: 3rem 0;
+  margin: 3rem 0;
 }
 
 .services .services-detail .service {
-    margin-bottom: 1rem;
-    padding: 2rem 1rem;
-    box-shadow: 0 6px 120px rgb(0 0 0 / 20%);
-    background: var(--white);
-    text-align: center;
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transition: transform 500ms ease-in;
-    -webkit-transition: transform 500ms ease-in;
-    -moz-transition: transform 500ms ease-in;
-    -ms-transition: transform 500ms ease-in;
-    -o-transition: transform 500ms ease-in;
+  margin-bottom: 1rem;
+  padding: 2rem 1rem;
+  box-shadow: 0 6px 120px rgb(0 0 0 / 20%);
+  background: var(--white);
+  text-align: center;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transition: transform 500ms ease-in;
+  -webkit-transition: transform 500ms ease-in;
+  -moz-transition: transform 500ms ease-in;
+  -ms-transition: transform 500ms ease-in;
+  -o-transition: transform 500ms ease-in;
 }
 
 .services .services-detail .service:hover {
-    transform: translateY(-10px);
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    -o-transform: translateY(-10px);
-    
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
 }
 
 .services .services-detail .service .s-icon {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
- 
 .services .services-detail .service .services-desp h3 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 /***************
@@ -226,17 +233,17 @@ nav ul.navbar-nav li.nav-item {
 }
 
 .restaurants .top-restaurants {
-    margin: 3rem 0;
+  margin: 3rem 0;
 }
 
 .restaurants .top-restaurants .res-img {
-    height: 15rem;
+  height: 15rem;
 }
 
 .restaurants .top-restaurants .res-img img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .restaurants .top-restaurants .owl-carousel .owl-nav {
@@ -245,8 +252,17 @@ nav ul.navbar-nav li.nav-item {
   margin-top: 1rem;
 }
 
-
-.restaurants .top-restaurants .owl-carousel .owl-nav button.owl-prev, 
+.restaurants .top-restaurants .owl-carousel .owl-nav button.owl-prev,
 .restaurants .top-restaurants .owl-carousel .owl-nav button.owl-next {
   font-size: 50px;
+}
+
+.restaurants .top-restaurants .res-details {
+  background-color: var(--white);
+  text-align: center;
+  padding: 2rem 0.5rem;
+}
+
+.restaurants .top-restaurants .res-details p.location {
+  margin-top: 1rem;
 }
