@@ -1,11 +1,4 @@
 @media (min-width: 600px) {
-  /* .banner-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 1rem;
-  } */
-
   .services .services-detail {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -41,6 +34,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 500px;
+  }
+
+  .banner .banner-content .title {
+    padding-top: 1rem;
   }
 }
 

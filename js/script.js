@@ -1,3 +1,12 @@
+// PRELOADER
+const preloader = document.querySelector(".preloader");
+
+window.addEventListener("load", function () {
+  preloader.classList.add("hide-preloader");
+});
+
+//owl carousel
+
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     nav: true,

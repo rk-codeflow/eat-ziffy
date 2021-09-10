@@ -17,7 +17,14 @@
   box-sizing: border-box;
 }
 
-body,
+body {
+  font-family: "Saira", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -27,7 +34,6 @@ h6,
 p {
   margin: 0;
   padding: 0;
-  font-family: "Saira", sans-serif;
 }
 
 img {
@@ -36,8 +42,24 @@ img {
   display: block;
 }
 
-html {
-  scroll-behavior: smooth;
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  z-index: 9999;
+  transition: all 0.3s linear;
+}
+
+.hide-preloader {
+  z-index: -999;
+  visibility: hidden;
 }
 
 /***************
@@ -76,7 +98,7 @@ html {
 }
 
 .ptb {
-  padding: 3rem 0;
+  padding: 4rem 0;
 }
 
 .more-btn {
@@ -174,7 +196,7 @@ nav ul.navbar-nav li.nav-item a.nav-link:hover {
   ABOUT  CSS
 ***************/
 .about .about-detail {
-  margin: 3rem 0;
+  margin-top: 3rem;
 }
 
 .about .about-detail .detail-img {
@@ -219,7 +241,7 @@ nav ul.navbar-nav li.nav-item a.nav-link:hover {
 }
 
 .services .services-detail {
-  margin: 3rem 0;
+  margin-top: 3rem;
 }
 
 .services .services-detail .service {
@@ -264,7 +286,7 @@ nav ul.navbar-nav li.nav-item a.nav-link:hover {
 }
 
 .restaurants .top-restaurants {
-  margin: 3rem 0;
+  margin-top: 3rem;
 }
 
 .restaurants .top-restaurants .res-img {
